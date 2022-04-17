@@ -1,0 +1,211 @@
+/* Style Settings */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+:root {
+    --font: 'Karla', 'Karla', sans-serif;
+}
+
+body {
+	width: 100wh;
+	height: 90vh;
+	color: #fff;
+	background: linear-gradient(-45deg, #030303,#1f1f1f);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+.content {
+    width: 400px;
+    padding: 20px;
+    overflow: hidden;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.content img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+
+}
+
+.content p span {
+  display: block;
+  
+}
+
+#userName {
+    color: rgb(255,255,255);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: line;
+    font-family: var(--font);
+    width: 100%;
+	text-align: center;
+    text-decoration: none;
+}
+
+#userDesc {
+    color: rgb(255,255,255);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: line;
+    font-family: var(--font);
+    width: 100%;
+	display: block;
+	text-align: center;
+	margin: 5px auto;
+    text-decoration: none;
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+
+
+.link {
+    display: block;
+    background-color: rgb(66, 110, 255);
+    color: #fff;
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 250ms;
+    border: solid var(--accentColor) 2px;
+	  position: relative;
+}
+
+
+.link:after {
+  content: '\2192';
+   font-family: var(--font);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+  right: 10px;
+  position: absolute;
+
+}
+
+.link:hover {
+    background-color: #fff;
+    color: #fff;
+
+	transform: translateX(10px);
+
+}
+
+.header {
+    text-align: center;
+    font-size: 1.3rem;
+	    margin-bottom: 20px;
+}
+
+.header a {
+    text-decoration:none;
+}
+
+.circle {
+    background: rgb(221, 221, 221);
+    border-radius: 52px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    font-size: 10px;
+    color: rgb(32, 32, 32);
+}
+
+.circle:hover {
+    background: rgb(66, 110, 255);
+    color: rgb(255, 255, 255);
+    -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+    box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.77);
+}
+/* 
+#rcorners1 {
+  border-radius: 25px;
+  background: #17a2b8;
+  padding: 20px; 
+
+}
+*/
+.footer {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@media screen and ( max-width:749px ){
+   /* hide the last line and hr */
+   .content {
+	   width: 345px;
+   }
+   .footer {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin-top:30px; /* You can edit the value of the margin top as you need */
+  }
+   
+}
